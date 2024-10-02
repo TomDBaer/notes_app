@@ -11,8 +11,10 @@ class JobController extends Controller
     {
         // avoids n+1 query call
         // $jobs = Job::with('employer')->paginate(5);
-        $jobs = Job::with('employer')->latest()->simplePaginate(4);
-
+        // $jobs = Job::with('employer')->latest()->simplePaginate(4);
+        // $jobs = Job::with('employer')->get();
+        $jobs = Job::with('employer')->get();
+        // dd($jobs);
         return view('jobs.index', [
             'jobs' => $jobs
         ]);
