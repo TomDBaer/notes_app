@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        Edit Job {{ $job->title }}
+        Edit Task {{ $job->title }}
     </x-slot:heading>
     <form method="POST" action="/jobs/{{ $job->id }}">
         @csrf

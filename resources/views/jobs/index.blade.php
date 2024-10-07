@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        Job listings
+        Tasks
     </x-slot:heading>
 
     <div class="mt-4 flex justify-around gap-4">
